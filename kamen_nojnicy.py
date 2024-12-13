@@ -19,10 +19,13 @@ def kamen_noj():
 
     if promt == bot_kamen():
         print('Ничья')
+
     elif promt == 'Камень':
         if bot_kamen() == 'Бумага':
             print('Вы проиграли')
             print(bot_kamen())
+        elif bot_kamen() == 'Камень':
+            print('Ничья')
         else :
             print('Вы выиграли')
             print(bot_kamen())
@@ -30,6 +33,8 @@ def kamen_noj():
         if bot_kamen() == 'Бумага':
             print('Вы выиграли')
             print(bot_kamen())
+        elif bot_kamen() == 'Ножницы':
+            print('Ничья')
         else :
             print('Вы проиграли')
             print(bot_kamen())
@@ -37,6 +42,8 @@ def kamen_noj():
         if bot_kamen() == 'Камень':
             print('Вы выиграли')
             print(bot_kamen())
+        elif bot_kamen() == 'Бумага':
+            print('Ничья')
         else :
             print('Вы проиграли')
             print(bot_kamen())
