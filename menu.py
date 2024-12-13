@@ -79,7 +79,7 @@ def page_menu():
                 return page_menu()
         elif choices == 'Камень, ножницы, бумага':
             settings = inquirer.select(
-                message="Игра пока отсутствует.",
+                message="Камень, ножницы, бумага",
                 choices=["Играть", "Назад"],
             ).execute()
 
@@ -102,8 +102,8 @@ def page_menu():
 
         if choices == 'Guess the number':
             settings = inquirer.select(
-                message="The game is not available yet.",
-                choices=["Back"],
+                message="Guess the number",
+                choices=["Играть","Back"],
             ).execute()
             os.system('cls||clear')
 
@@ -113,8 +113,8 @@ def page_menu():
                 return page_menu()
         elif choices == 'Rock, paper, scissors':
             settings = inquirer.select(
-                message="The game is not available yet.",
-                choices=["Back"],
+                message="Rock, paper, scissors",
+                choices=["Играть", "Back"],
             ).execute()
             os.system('cls||clear')
             if settings == 'Играть':
