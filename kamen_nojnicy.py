@@ -26,7 +26,7 @@ def kamen_noj():
             print(bot_kamen())
         elif bot_kamen() == 'Камень':
             print('Ничья')
-        else :
+        elif bot_kamen() == 'Ножницы' :
             print('Вы выиграли')
             print(bot_kamen())
     elif promt == 'Ножницы':
@@ -35,7 +35,7 @@ def kamen_noj():
             print(bot_kamen())
         elif bot_kamen() == 'Ножницы':
             print('Ничья')
-        else :
+        elif bot_kamen() == 'Камень':
             print('Вы проиграли')
             print(bot_kamen())
     elif promt == 'Бумага':
@@ -44,7 +44,7 @@ def kamen_noj():
             print(bot_kamen())
         elif bot_kamen() == 'Бумага':
             print('Ничья')
-        else :
+        elif bot_kamen() == 'Ножницы' :
             print('Вы проиграли')
             print(bot_kamen())
 
