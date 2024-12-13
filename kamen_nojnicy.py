@@ -10,6 +10,9 @@ def bot_kamen() -> str:
 
 
 def kamen_noj():
+
+    bot_kamens = bot_kamen()
+
     promt = inquirer.select(
 
         message="Что вы поставите?",
@@ -17,37 +20,31 @@ def kamen_noj():
 
     ).execute()
 
-    if promt == bot_kamen():
-        print('Ничья')
-
-    elif promt == 'Камень':
-        if bot_kamen() == 'Бумага':
-            print('Вы проиграли')
-            print(bot_kamen())
-        elif bot_kamen() == 'Камень':
+    if promt == 'Камень':
+        if bot_kamens == 'Камень':
             print('Ничья')
-        elif bot_kamen() == 'Ножницы' :
+        elif bot_kamens == 'Бумага':
+            print('Вы проиграли')
+        elif bot_kamens == 'Ножницы' :
             print('Вы выиграли')
-            print(bot_kamen())
     elif promt == 'Ножницы':
-        if bot_kamen() == 'Бумага':
+        if bot_kamens == 'Бумага':
             print('Вы выиграли')
-            print(bot_kamen())
-        elif bot_kamen() == 'Ножницы':
+        elif bot_kamens == 'Ножницы':
             print('Ничья')
-        elif bot_kamen() == 'Камень':
+        elif bot_kamens == 'Камень':
             print('Вы проиграли')
-            print(bot_kamen())
     elif promt == 'Бумага':
-        if bot_kamen() == 'Камень':
+        if bot_kamens == 'Камень':
             print('Вы выиграли')
-            print(bot_kamen())
-        elif bot_kamen() == 'Бумага':
+        elif bot_kamens == 'Бумага':
             print('Ничья')
-        elif bot_kamen() == 'Ножницы' :
+        elif bot_kamens == 'Ножницы' :
             print('Вы проиграли')
-            print(bot_kamen())
 
+
+
+    print(bot_kamens)
 
 
 
